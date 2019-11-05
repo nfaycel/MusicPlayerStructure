@@ -6,6 +6,7 @@ class Song {
     private String Album;
     private String Artist;
     private String icon;
+    static  String[] playing_status={"","",""}; // current playing status: "Album, Artist, song title"
 
 
     public Song(String title, int duration, String album, String artist, String icon) {

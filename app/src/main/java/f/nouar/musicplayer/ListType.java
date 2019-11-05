@@ -31,7 +31,9 @@ public class ListType extends AppCompatActivity {
         songs = new ArrayList<Song>();
         songs.add(new Song("Title1", 0, "Album1", "Artist1", "album1"));
         songs.add(new Song("Title1", 0, "Album2", "Artist2", "album1"));
-        songs.add(new Song("Title1", 0, "Album3", "Artist1", "album1"));
+        songs.add(new Song("Title1", 0, "Album3", "Artist3", "album1"));
+        songs.add(new Song("Title1", 0, "Album4", "Artist4", "album1"));
+
 
 
         final AlbumAdapter adapter = new AlbumAdapter(this, songs);

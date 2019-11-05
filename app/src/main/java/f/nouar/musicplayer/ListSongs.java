@@ -13,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
+import static f.nouar.musicplayer.Song.playing_status;
+
 // List of songs depends on the caller activity "all songs", "songs of specific album" and "songs of specific artists"
 public class ListSongs extends AppCompatActivity {
 
@@ -35,7 +37,7 @@ public class ListSongs extends AppCompatActivity {
         songs.add(new Song("Title2", 0, "Album3", "Artist3", "all_music2"));
         songs.add(new Song("Title1", 0, "Album4", "Artist4", "all_music2"));
 
-        ListView listView = findViewById(R.id.list);
+        final ListView listView = findViewById(R.id.list);
 
 
         String filter = intent.getStringExtra("filter");
@@ -72,6 +74,12 @@ public class ListSongs extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.i("song clicked position:", Integer.toString(position));
+                Song msong = (Song) parent.getItemAtPosition(position);
+                playing_status[0]=msong.getAlbum();
+                playing_status[1]=msong.getArtist();
+                playing_status[2]=msong.getTitle();
+                Log.i("status:",playing_status[0]+" "+playing_status[1]+" "+playing_status[2]);
+
             }
         });
 
