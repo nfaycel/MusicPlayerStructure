@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Music Player</string>
     <string name="back_previous"><![CDATA[<]]></string>
+    <string name="title_list_songs">Songs list</string>
+    <string name="album_">Album 1</string>
+    <string name="artist">Artist</string>
 </resources>

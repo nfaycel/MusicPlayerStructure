@@ -8,7 +8,6 @@
     android:background="@color/colorBackground_aqua"
     tools:context=".MainActivity">
 
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -19,8 +18,8 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <LinearLayout
-        android:layout_width="180dp"
-        android:layout_height="394dp"
+        android:layout_width="@dimen/menu_width"
+        android:layout_height="@dimen/menu_height"
         android:orientation="vertical"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"

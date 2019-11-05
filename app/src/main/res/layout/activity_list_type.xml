@@ -1,122 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:padding="7dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground_aqua"
+    android:orientation="vertical"
+    android:padding="7dp"
     tools:context=".ListSongs">
 
     <LinearLayout
         android:id="@+id/top_title"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:padding="5dp"
-        android:background="#EEFFEE"
-        android:orientation="horizontal">
+        android:background="@color/aqua_light"
+        android:orientation="horizontal"
+        android:padding="5dp">
 
         <ImageView
             android:id="@+id/back_previous"
             android:layout_width="0dp"
-            android:layout_weight="0.1"
             android:layout_height="match_parent"
             android:layout_marginRight="5dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:src="@drawable/previous_" />
+            android:layout_weight="0.1"
+            android:src="@drawable/previous_"
+            android:textColor="@color/colorPrimaryDark" />
 
         <TextView
             android:id="@+id/title_songsList"
             android:layout_width="0dp"
-            android:layout_weight="0.8"
             android:layout_height="match_parent"
+            android:layout_weight="0.8"
             android:textAlignment="center"
-            android:text="List of the songs"
             android:textSize="24dp" />
 
         <ImageView
             android:id="@+id/icon_songsList"
             android:layout_width="0dp"
-            android:layout_weight="0.1"
             android:layout_height="match_parent"
+            android:layout_weight="0.1"
             android:src="@drawable/all_music_rect" />
 
     </LinearLayout>
+
     <ListView
         android:id="@+id/list_album"
-        android:layout_below="@id/top_title"
-        android:layout_above="@id/player_control"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_above="@id/player_control"
+        android:layout_below="@id/top_title"
+        android:orientation="vertical" />
+
     <LinearLayout
         android:id="@+id/player_control"
         android:layout_width="match_parent"
-        android:layout_alignParentBottom="true"
         android:layout_height="wrap_content"
-
-        android:background="#EEFFEE"
+        android:layout_alignParentBottom="true"
+        android:background="@color/aqua_light"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_alignParentBottom="true"
             android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:background="#EEFFEE"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_weight="0.1"
-                android:layout_height="50dp"
-                android:layout_marginRight="5dp"
-                android:textColor="@color/colorPrimaryDark"
-                android:src="@android:drawable/ic_media_previous"/>
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_weight="0.1"
-                android:layout_height="50dp"
-                android:layout_marginRight="5dp"
-                android:textColor="@color/colorPrimaryDark"
-                android:src="@android:drawable/ic_media_play" />
+            android:layout_alignParentBottom="true"
+            android:background="@color/aqua_light"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_weight="0.1"
-                android:layout_height="match_parent"
-                android:src="@android:drawable/ic_media_next"/>
-        </LinearLayout>
-        <SeekBar
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_alignParentBottom="true"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:background="#EEFFEE"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_weight="0.1"
                 android:layout_height="50dp"
                 android:layout_marginRight="5dp"
-                android:textColor="@color/colorPrimaryDark"
-                android:src="@drawable/previous_" />
+                android:layout_weight="0.1"
+                android:src="@android:drawable/ic_media_previous"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.1"
+                android:src="@android:drawable/ic_media_play"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:src="@android:drawable/ic_media_next" />
+        </LinearLayout>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/aqua_light"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
             <TextView
                 android:layout_width="0dp"
+                android:layout_height="50dp"
                 android:layout_weight="0.8"
-                android:layout_height="match_parent"
                 android:textAlignment="center"
-                android:text="currently playing song"
-                android:textSize="24dp" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_weight="0.1"
-                android:layout_height="match_parent"
-                android:src="@drawable/all_music_rect" />
+                android:textSize="19dp" />
         </LinearLayout>
 
     </LinearLayout>

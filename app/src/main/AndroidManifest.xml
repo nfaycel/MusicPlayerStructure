@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SongPlayingDetail"></activity>
+        <activity android:name=".SongDetail"></activity>
         <activity android:name=".ListSongs" />
         <activity android:name=".ListType" />
         <activity android:name=".MainActivity">
