@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Song Title"
-            android:textSize="21dp"
+            android:textSize="21sp"
             android:layout_toRightOf="@+id/song_icon"
             android:padding="3dp"/>
         <TextView
@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Song Title"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:layout_below="@id/song_title"
             android:layout_toRightOf="@+id/song_icon"
             android:padding="5dp"/>

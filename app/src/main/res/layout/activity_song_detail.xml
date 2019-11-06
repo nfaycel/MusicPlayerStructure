@@ -36,7 +36,7 @@
             android:layout_weight="0.8"
             android:text="Song Detail"
             android:textAlignment="center"
-            android:textSize="24dp" />
+            android:textSize="24sp" />
         <ImageView
             android:id="@+id/icon_songsList"
             android:layout_width="0dp"
@@ -61,7 +61,7 @@
             android:layout_marginTop="36dp"
             android:text="Song Title"
             android:textColor="@color/aqua_light"
-            android:textSize="34dp"
+            android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/top_title" />
@@ -72,7 +72,7 @@
             android:layout_marginTop="20dp"
             android:text="TextView"
             android:textColor="@color/aqua_light"
-            android:textSize="34dp"
+            android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/songTitle" />
@@ -83,7 +83,7 @@
             android:layout_marginTop="28dp"
             android:text="TextView"
             android:textColor="@color/aqua_light"
-            android:textSize="34dp"
+            android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/songAlbum" />
@@ -139,7 +139,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.8"
                 android:textAlignment="center"
-                android:textSize="19dp" />
+                android:textSize="19sp" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
